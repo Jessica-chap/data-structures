@@ -1,5 +1,11 @@
 """Functions to parse a file containing student data."""
-
+  #create empty set to store house names
+  #open the filename
+  #extract information
+  #loop over each line
+  #strip the line to get sepearte elements
+  #which index is house name
+  #add that index to the set 
 
 def all_houses(filename):
     """Return a set of all house names in the given file.
@@ -15,9 +21,16 @@ def all_houses(filename):
       - set[str]: a set of strings
     """
 
-    houses = set()
 
-    # TODO: replace this with your code
+    houses = set()
+    magic_houses = open(filename)
+    for line in magic_houses:
+    
+      line = line.split('|')
+      house_name = line[2]
+      houses = house_name
+    # if houses found in line 
+    
 
     return houses
 
